@@ -1,0 +1,40 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 11434,
+    "workers": 1,
+    "reload": false
+  },
+  "cache": {
+    "directory": "./cache",
+    "retention_days": 30,
+    "cleanup_interval": 3600,
+    "max_size_gb": null,
+    "compress_blobs": false
+  },
+  "upstream": {
+    "url": "https://registry.ollama.ai",
+    "timeout": 300,
+    "max_concurrent_downloads": 3,
+    "retry_attempts": 3,
+    "retry_delay": 1.0
+  },
+  "security": {
+    "api_key": null,
+    "allowed_models": null,
+    "blocked_models": null,
+    "rate_limit_requests": 100,
+    "rate_limit_window": 60
+  },
+  "logging": {
+    "level": "INFO",
+    "file": null,
+    "max_file_size": "10MB",
+    "backup_count": 5
+  },
+  "features": {
+    "enable_api_proxy": true,
+    "enable_metrics": true,
+    "enable_web_ui": false
+  }
+}
