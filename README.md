@@ -19,7 +19,7 @@ A Python-based mirror server for Ollama model pulling that provides local cachin
 
 1. Clone or download the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:treeleaves30760/ollama-mirror.git
 cd ollama-mirror
 ```
 
